@@ -32,7 +32,7 @@ export class CommissionService {
       return false;
     }
 
-    if (rule.minTurnover && transactionDetails.base_total < rule.minTurnover) {
+    if (rule.minTurnover && transactionDetails.base_total <= rule.minTurnover) {
       return false;
     }
 
